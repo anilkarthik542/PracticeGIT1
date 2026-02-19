@@ -11,5 +11,4 @@ test('Test demo site with Tags @smoke', async ({ login }) => {
 
     await login.launchUrl('https://www.demoblaze.com/index.html')
     await login.EnterUserAndPassword('pavanol', 'test@123')
-    await login.page.locator('#logout2').click()
 })
