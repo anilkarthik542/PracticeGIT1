@@ -31,9 +31,9 @@ pipeline {
       steps {
         script {
           if (isUnix()) {
-            sh 'npx playwright test tests/poms/test_runner/test_login_spec.js --reporter=html,junit'
+            sh 'npx playwright test tests/poms/test_runner/test_login.spec.js --reporter=html,junit'
           } else {
-            bat 'npx playwright test tests/poms/test_runner/test_login_spec.js --reporter=html,junit'
+            bat 'npx playwright test tests/poms/test_runner/test_login.spec.js --reporter=html,junit'
           }
         }
       }
