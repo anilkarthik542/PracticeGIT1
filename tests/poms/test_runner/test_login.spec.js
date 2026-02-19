@@ -1,5 +1,5 @@
-import { test as base, expect } from '@playwright/test'
-import { LoginPage } from '../pages/login.spec'
+import { test as base, expect } from '@playwright/test';
+import { LoginPage } from '../pages/login.spec';
 
 const test = base.extend({
     login: async ({ page }, use) => {
